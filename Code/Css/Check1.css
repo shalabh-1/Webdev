@@ -1,0 +1,55 @@
+
+ #parent{
+    background-color: yellowgreen;
+}
+/* child slector */
+div > p{
+
+    background-color: blue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#parent .shalabh{
+
+    color: darkcyan;
+}
+
+/* decendent Selector  */
+div p{
+    
+}
+
+
+/* Pseudo Selector */
+
+
+a:visited{
+color: brown;
+background-color:black;
+}
+
+
+
+
+
+/* all link color will be aquamarine */
+a:link{
+    color: aquamarine;
+}
+
+/* jab ham link pr click krenge */
+a:active{
+    background-color: pink;
+}
+
+
+p:first-child{
+    background-color: darkorchid;
+}
+
+
