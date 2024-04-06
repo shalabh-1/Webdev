@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+            let val=prompt("Enter Your first val");
+
+            let sign=prompt("Enter your symbol");
+
+            let val2=prompt("Enter your second val");
+
+            let obj={
+
+                "+":"-",
+                "-":"+",
+                "*":"/",
+                "/":"*"
+
+            }
+
+
+
+
+            const ran=Math.random();
+            console.log(ran)
+            if(ran>0.1){
+                console.log(`${eval(`${val} ${sign} ${val2}`)}`);
+            }else{
+                console.log(`${eval(`${val1}${obj[sign]} ${val2}`)}`)
+
+            }
+
+
+    </script>
+</body>
+</html>

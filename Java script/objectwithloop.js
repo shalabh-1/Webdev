@@ -21,6 +21,12 @@ console.log(x["name"]);
 // n=15;
 // console.log(n);
 
+for(let i=0;i<Object.keys(x).length;i++){
+
+console.log("Your key is  ", Object.keys(x)[i] ,"    and your values is ",  x[Object.keys(x)[i]]  )    
+
+}
+
 for(let key in x){
 
     console.log(key ," ", x[key]);
@@ -30,7 +36,7 @@ for(let key in x){
 let arr=[1,2,3,4];
 
 for(let val of arr){
-    
+    console.log(val)
 }
 
 
