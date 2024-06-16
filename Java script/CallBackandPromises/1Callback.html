@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--Call back function()-> Passing function inside function as an argument  -->
+
+
+
+    <script>
+
+
+        // synchronious function -> function that response immediatedly
+        console.log("'I am synchronious function 1");
+
+        console.log('I am synchronious function 2');
+
+            let ananomyousfuction=()=>{
+
+                console.log("I am ananomyous");
+            }
+
+
+            // callback function-> passing function as an argumeet into an another function
+
+            // time taken by a function is call Ananymous function and it execute at last
+
+            // yai function call back function bhi hai and ananomyous fuction hai 
+            setTimeout(ananomyousfuction,3000);
+            console.log("I am snchronyous 3")
+
+
+
+            // call back  function with synchrnous function
+
+            let func=(x)=>{
+
+                    console.log(" I am a paremeter " ,x);
+
+                   
+            }
+
+
+            let check=(script,func)=>{
+
+                    let scr=document.createElement("script");
+                    
+                    // ele.setAttribute("scr",srcript)
+                    // Or
+
+                    scr.src=script;
+                   
+                    document.head.append(scr);
+
+                    scr.onload=func(22);
+
+                    console.log(scr.onload);
+                    
+
+            }
+
+            check("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js",func);
+
+            // anfn 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

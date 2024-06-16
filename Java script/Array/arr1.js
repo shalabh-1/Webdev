@@ -1,12 +1,12 @@
 let arr=[1,2,3,4,5];
 
 
-console.log(arr.toString());
+console.log(' string conevrsion ${arr.toString()');
 console.log(typeof arr)
 
 // it returns updated length and push element at last
 let len=arr.push(29);
-console.log(len);
+console.log("New len",len);
 // return delet  elememnt at last and return eleted element 
 let delval =arr.pop()
 

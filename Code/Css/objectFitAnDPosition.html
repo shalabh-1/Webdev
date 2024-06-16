@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit and Position</title>
+</head>
+
+<style>
+    .container{
+        height:400px;
+        width:488px;
+        border: 2px solid black;
+        background-color: azure;
+    }
+    img{
+        height: 400px;
+        width: 488px;
+        /*  object-fit: cover; it cover the ARE THAT ARE PRESENT IN IMAGE TAG AN iska koi lena dena nhi h parent tage se  and thodi image cut bhi kar deta h */
+        object-fit: cover;
+        /* object-position: top right;  yai tujhe ye batat h ki i part ko dikha hai and kis part ko cut krne hai so ham yha par top right ko ham dikha rhe h*/
+        /* object-position: top right; */
+
+        /*  object-position: 10px 20px;yai thoda left and top se shift krdenga image ko it works for both cover and contains in object fit 
+        and  image ko jab shift krenga to ye imge cut by kr denga*/
+
+        object-position: 40px 50px;
+
+
+        /*  object-fit: contain; ye cut nhi krta but yai image ki height weight of the image valle area ko cover nhi karta */
+        /* object-fit: contain; */
+
+        
+        
+       }
+    
+</style>
+<body>
+
+    <div class="container">
+        <img src="tree-736885_1280.jpg" alt="">
+    </div>
+    
+</body>
+</html>
+

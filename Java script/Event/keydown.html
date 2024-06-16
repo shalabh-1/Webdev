@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <!--  button par click krke koi bhi key daba doo console par event dikh jayenga -->
+    
+    <button id="btn">click me</button>
+
+
+    <script>
+
+
+// document.getElementById("btn").addEventListener("keydown",(e)=>{
+
+// console.log(e);
+
+
+
+// })
+
+document.addEventListener("keydown",(e)=>{
+
+// console.log(e);
+
+console.log(e.key)
+
+console.log(e.type)
+
+console.log(e.currentTarget)
+
+
+
+}
+)
+
+document.getElementById("btn").onclick=e=>{
+    console.log(e.type);
+}
+
+</script>
+    
+</body>
+</html>

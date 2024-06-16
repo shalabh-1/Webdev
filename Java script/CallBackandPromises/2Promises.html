@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+    <script>
+      
+        
+        
+        // It te
+        let prom1 = new Promise((resolve, reject) => {
+        
+            let x = Math.random();
+            
+            if (x > 0.5) {
+                
+                setTimeout(() => {
+                   
+        
+                    resolve("By Shalabh 1")
+                }, 3000);
+                
+            }
+            else {
+                reject("Maintainace Break 1")
+            }
+            
+        }
+        
+    )
+
+  
+        
+        let prom2 = new Promise((resolve, reject) => {
+        
+            let x = Math.random();
+            
+            if (x > 0.5) {
+                
+                setTimeout(() => {
+                   
+                    resolve("By Shalabh 2")
+                }, 1000);
+                
+            }
+            else {
+                reject("Maintainace Break 2")
+            }
+        
+        }
+        
+    )
+        
+        
+        prom1.then((resolve) => {
+        
+            console.log(resolve);
+            return prom2;
+            
+        }
+        ). catch((reject) => {
+            console.log(reject);
+        })
+        
+        
+        prom2.then((resolve)=>{
+        
+            console.log(resolve);
+            
+        }). catch((reject) => {
+            console.log(reject);
+        })
+       
+        
+    
+        
+        
+        
+//     let pr=Promise.all([prom1,prom2]);
+
+//         pr.then((resolve)=>{
+
+//             console.log(resolve)
+//         }).catch(e=>{
+//             console.log(e);
+//         }
+//         )
+
+
+
+//         let pr2=Promise.allSettled([prom1 ,prom2]);
+
+//  pr2.then((resolv)=>{
+
+// console.log(resolv)
+// }).catch(e=>{
+// console.log(e);
+// }
+// )
+
+        let pr3=Promise.race([prom1 ,prom2]);
+
+ pr3.then((resolv)=>{
+
+console.log(resolv)
+}).catch(e=>{
+console.log(e);
+}
+)
+
+
+
+console.log("check "+prom1);
+    
+       
+    </script>
+    
+    
+
+
+</body>    
+</html>
+

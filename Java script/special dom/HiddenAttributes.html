@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+
+            width: 100vw;
+            height: 100vh;
+            border: 2px solid black;
+        }
+        .box{
+            width: 45px;
+            height: 45px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="container" hidden>
+
+        <div class="box"> box1</div>
+        <div class="box"> box1</div>
+        <div class="box"> box1</div>
+    </div>
+
+    <button> Click Me for visibility</button>
+
+
+
+    <script>
+
+            document.querySelector("button").onclick =()=>{
+
+                let element=document.querySelector(".container");
+                if(element.hidden==true){
+                    element.hidden=false;
+                }
+
+                console.log(element.hasAttribute("class"));
+            }
+
+    </script>
+    
+</body>
+</html>
+

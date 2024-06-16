@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            width: 34px;
+            height: 34px;
+            border: 2px solid #999;
+            padding: 34px;     
+        }
+
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="box">Bupendra Jogi</div>
+        <div class="box">Bupendra Jogi</div>
+        <div class="box">Bupendra Jogi</div>
+        <div class="box">Bupendra Jogi</div>
+    </div>
+    <div class="container" id="fuck">
+        <div class="box"> Jogi</div>
+        <div class="box">Bupendra Jogi</div>
+        <div class="box">Bupendra Jogi</div>
+        <div class="box">Bupendra Jogi</div>
+    </div>
+    
+
+
+    <script>
+
+        document.body.style.background="yellow";
+
+        document.title="fuck"
+
+        console.log(document.title)
+
+        console.log(document.body);
+
+        // document.body.children[0].children[2].style.background="pink"
+
+        // document.div.children[2].style.background="pink";
+
+        let x=document.querySelectorAll(".box");
+
+        x.forEach((element)=>{
+
+            element.style.background="red";
+        })
+
+        // let y=document.querySelector(".box");
+
+            let y=document.getElementsByClassName("box");
+
+            // y[1].style.background="black"
+
+            y.forEach((element)=>{
+
+element.style.background="pink";
+})
+
+for(let i=0;i<y.length;i++){
+    y[i].style.background="black"
+}
+
+
+
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container{
+
+            width:100vw;
+            height: 50vh;
+            border: 2px solid black;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Topic-> Insert Adjecent HTML -->
+
+
+
+    
+    
+    
+    <!-- container is the parent node -->
+
+    <div class="container">
+
+        <div class="text">Text1</div>
+        <div class="text">Text2</div>
+        <div class="text">Text3</div>
+        <div class="text">Text4</div>
+
+        
+        <!-- beforebegin->add html before the the element node -->
+        <button  id="btn1">click me 1</button>
+        <!-- after begin  ->add html after the the element node -->
+        <button  id="btn2">click me 2</button>
+        <!-- afterbegin->add html inside the   "element node" at the first place -->
+        <button id="btn3">click me 3</button>
+        
+        <button id="btn4">click me 4</button>
+
+
+    </div>
+
+    <script>
+
+        // code of beforebegin->add html before the the "element node "
+
+        document.querySelector("#btn1").onclick=()=>{
+
+           
+            document.querySelector(".container").insertAdjacentHTML("beforebegin","<b>I Am the Html That adds before the element node</b>")
+        }
+
+
+
+          // code of afterend->add html after the  "element node"
+
+          document.querySelector("#btn2").onclick=()=>{
+
+           
+document.querySelector(".container").insertAdjacentHTML("afterend","<b>I Am the Html That adds after the element node</b>")
+}
+
+
+          // code of afterbegin->add html inside the   "element node" at the first place
+
+          document.querySelector("#btn3").onclick=()=>{
+
+           
+document.querySelector(".container").insertAdjacentHTML("afterbegin","<b>I Am the Html That adds inside element node at first place</b>")
+}
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 100vw;
+            height: 50vh;
+        }
+        .box{
+            border: 2px solid black;
+            width: 35px;
+            height: 35px;;
+        }
+        .box2{
+            border: 2px solid black;
+            width: 65px;
+            height: 95px;;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- append()  method is use to add element  indise element node or parent node(Yain name maine khud rakha h )-->
+    <div class="container">
+        <!-- container is the element node -->
+
+        <div class="box"> box1</div>
+        <div class="box"> box2</div>
+        <div class="box"> box3</div>
+        <!--  cick to add element at Last inside element node or parent node -->
+        <button id="btn1">Click me 1</button>
+
+         <!--  cick to add element at  inside element node or parent node  at first place -->
+        <button id="btn2">Click me 2</button>
+
+         <!--  cick to add element at  before element node -->
+         <button id="btn3">Click me 3</button>
+
+             <!--  cick to add element after element node -->
+         <button id="btn4">Click me 4</button>
+
+    
+    </div>
+
+    
+    <script>
+
+
+// code to add element at Last inside element node or parent node 
+            
+        document.querySelector("#btn1").onclick=()=>{
+            
+            // create Element
+            let element=document.createElement("div");
+
+            let textNode=document.createTextNode("I am adding at Last");
+
+            element.append(textNode);
+
+
+            element.setAttribute("class","box2");
+            
+            // document.querySelector(".container") is the element node
+            document.querySelector(".container").append(element);
+
+        }
+
+        // <!--  code to add element at  inside element node or parent node  at first place -->
+
+        document.getElementById("btn2").onclick=()=>{
+
+             
+            // create Element
+            let element=document.createElement("div");
+
+            let textNode=document.createTextNode("I am adding at First place ");
+
+            element.append(textNode);
+            // we can also use this below
+            // element.appendChild(textNode);
+
+
+
+            element.setAttribute("class","box2");
+
+            document.querySelector(".container").prepend(element);
+
+        }
+
+
+        // code to add element at  before the element node
+
+
+            document.querySelector("#btn3").onclick=()=>{
+                       // create Element
+            let element=document.createElement("div");
+
+let textNode=document.createTextNode("I am adding before Element Node");
+
+element.append(textNode);
+// we can also use this below
+// element.appendChild(textNode);
+
+
+
+element.setAttribute("class","box2");
+
+document.querySelector(".container").before(element); 
+
+
+            }
+
+        // add element after element node
+
+
+        
+        document.querySelector("#btn4").onclick=()=>{
+                       // create Element
+            let element=document.createElement("div");
+
+let textNode=document.createTextNode("I am adding after Element Node");
+
+element.append(textNode);
+// we can also use this below
+// element.appendChild(textNode);
+
+
+
+element.setAttribute("class","box2");
+
+document.querySelector(".container").after(element); 
+
+        }
+
+    </script>
+    
+</body>
+</html>

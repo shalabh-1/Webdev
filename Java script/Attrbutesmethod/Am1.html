@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box"> box1</div>
+        <div class="box"> box1</div>
+        <div class="box" id="shalabh"> box1</div>
+    </div>
+
+    <button> Click Me </button>
+
+    <script>
+
+        // In this file we use hasAttribute() and getAttribute()
+
+        // and creating a element also and add element at last;
+
+        document.querySelector("button").onclick=()=>{
+
+            // get all  class element  in the form of node list
+            let list=document.querySelectorAll(".box");
+
+            list.forEach(element =>{
+
+                if(element.hasAttribute("id")){
+
+                    // create a element
+                    let p=document.createElement("p");
+                    // element.getAttribute("id")=> getting the value of Id ettrivute
+                    p.innerText="Your  Id attribute Name is " +element.getAttribute("id"); 
+
+
+                    // add element inside Element node at last
+                    document.querySelector(".container").append(p);
+                        return;
+                }
+
+            })
+        }
+
+
+    </script>
+
+
+
+
+
+    
+</body>
+</html>

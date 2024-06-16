@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+       let val=5;
+
+    //    for(let i=1;i<=val;i++){
+    //         document.writeln(`${val} * ${i} =${val*i}` +"<Br>");
+    //    }
+
+
+    //    let y=Array(val).keys();
+    //    console.log(typeof y);
+    //    console.log(y);
+    //    console.log(Array.from(y).slice(1,))
+
+            function fact(number){
+        let arr=Array.from(Array(val+1).keys())
+        let ans=arr.slice(1).reduce((a,b)=>a*b)
+        return ans;
+    }
+        console.log(fact(val));
+    </script>
+</body>
+</html>

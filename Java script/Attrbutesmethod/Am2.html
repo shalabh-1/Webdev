@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box"> box1</div>
+        <div class="box"> box2</div>
+        <div class="box" id="shalabh"> box3</div>
+    </div>
+
+    <button> Click Me </button>
+
+    <script>
+
+    //    Similar 2 previous file 
+    // small changes  that we are creating a text node
+
+        document.querySelector("button").onclick=()=>{
+
+            // get all  class element  in the form of node list
+            let list=document.querySelectorAll(".box");
+
+            list.forEach(element =>{
+
+                if(element.hasAttribute("id")){
+
+                    // create a element
+                    let p=document.createElement("p");
+                    let textNode=document.createTextNode("Your Id attribute name is " +element.getAttribute("id"))
+                    
+                    p.append(textNode);
+
+                    // we cal also append two text node as Well
+                    // let textNode2=document.createTextNode("  Checking2");
+                    //     p.append(textNode,textNode2)
+
+                    
+
+
+                    // add element inside Element node at last
+                    document.querySelector(".container").append(p);
+                        return;
+                }
+
+            })
+        }
+
+
+    </script>
+
+
+
+
+
+    
+</body>
+</html>

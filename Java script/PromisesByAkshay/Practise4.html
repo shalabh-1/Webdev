@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button id="btn">Buy Now</button>
+
+    <script>
+
+        let totalbalance = 2000;
+        let proceedToPayment = (orderid, PassingAmount) => {
+
+            if (orderid > 0) {
+                PassingAmount(1000);
+            }
+
+        }
+        let createOrder = (list, PassId) => {
+            let c = 0;
+            for (let i = 0; i < list.length; i++) {
+                c++;
+            }
+            PassId(c);
+
+        }
+
+        let list = ["Shoes", "socks"];
+
+        // it gives you order details or order id and create Order in a Data Base
+        
+        document.addEventListener('click', createOrder(list, (orderid) => {
+
+            proceedToPayment(orderid, (amount) => {
+
+                ordersummary(amount, (amount) => {
+
+                })
+            })
+
+        })
+
+
+            // yai data hamme khi se milega
+
+
+            // buy now in amaxom
+
+
+
+
+        )
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

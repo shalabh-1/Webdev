@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 200px;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        .box {
+            width: 80vw;
+            height: 100px;
+            background-color: blue;
+            padding: 10px;
+        }
+
+        .box2 {
+            width: 60vw;
+            height: 70px;
+            background-color: pink;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+
+            <div class="box2">
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+
+        document.querySelector(".box2").addEventListener("click", (e) => {
+            e.stopPropagation()
+
+            alert("You clicked box 2 " )
+            console.log(typeof e)
+        })
+
+        document.querySelector(".box").addEventListener("click", (e) => {
+
+            e.stopPropagation()
+            alert("You clicked box ")
+        })
+        document.querySelector(".container").addEventListener("click", (e) => {
+
+            e.stopPropagation()
+            alert("You clicked  container")
+        })
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

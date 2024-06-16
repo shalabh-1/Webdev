@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- first file mai jo same code h usse hi just bass promises sai kiya h -->
+    
+    
+    <script>
+
+let script="c1.js"
+        function get(){
+
+            return script;
+
+        }
+
+        let prom1=new  Promise((resolve ,reject)=>{
+
+            let getScrpit=get();
+            
+            if(getScrpit !== ""){
+               
+
+                let element=document.createElement("script");
+                element.src=getScrpit;
+                document.head.append(element);
+
+                element.onload=()=>{
+                    console.log("Done");
+                }
+                resolve("Script is loading")
+
+            }else{
+                reject("Somethig went wrong")
+            }
+
+
+
+        }).then((resolve)=>{
+
+            console.log(resolve)
+
+        }).catch((reject)=>{
+
+            console.log(reject)
+
+        })
+
+
+       
+
+
+
+
+
+        // let y;
+
+        // function res(a){
+        //     let y=a;
+
+        //     return a;
+        // }
+
+        // let a="hello"
+        // res(a)
+
+        // console.log(y);
+
+    </script>
+
+
+
+</body>
+</html>

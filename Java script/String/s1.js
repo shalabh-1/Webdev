@@ -1,6 +1,7 @@
 let x="Shalabh";
 console.log(x[2]);
 console.log(x.length);
+
 // Escape Sequence Character
 let text = "We are the so-called \"Fuck\" from the  Earth.";
 console.log(text);

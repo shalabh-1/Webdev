@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+
+        .container{
+            background-color: antiquewhite;
+            width:50vw;
+            height: 40vh;
+            border: 2px solid red;
+            
+        }
+
+        .box{
+           
+           
+            background-color: aquamarine;
+            width:5vw;
+            height: 4vh;
+            /* transition-property:all; */
+            transition-property:background-color, transform;
+           transition-duration: 3s;
+           transition-timing-function: ease-in-out;
+           transition-delay: 1s;
+        }
+
+        .transform{
+            transform:translateX(10vw) translateY(10vh);
+            background-color: #000;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container ">
+
+        <div class="box transform">
+
+        </div>
+    </div>
+    
+</body>
+</html>

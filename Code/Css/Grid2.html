@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            display: grid;
+            /* this is not a tag its a user defined name */
+            grid-template-areas: "nav nav nav"
+            "side article article"
+            "footer footer footer"
+            ;
+        }
+        .box{
+            border: 2px solid red;
+            height: 35px;
+            
+        }
+        .box1{
+            grid-area: nav;
+            background-color: yellow;
+
+        }
+        .box2{
+            grid-area: side;
+            background-color: green;
+        }
+        .box3{
+            grid-area: article;
+            background-color: bisque;
+        }
+        .box4{
+           grid-area: footer;
+           background-color: pink;
+        }
+         
+        .box5{
+                grid-area: article;
+                /* background-color: aqua; */
+            }
+
+            /* .box6{ 
+                grid-area: article;
+            } 
+            */
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+        <div class="box box6">6</div>
+
+    </div>
+    
+</body>
+</html>

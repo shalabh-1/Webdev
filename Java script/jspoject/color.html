@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+            .box{
+                height:45px ;
+                width: 45px;
+                border: 2px solid black;
+                
+                
+            }
+
+
+    </style>
+    
+</head>
+<body>
+
+    <div class="conatiner">
+
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+        <div class="box">Box</div>
+
+    </div>
+
+    <script>
+        
+        function randomcolor(){
+
+            return Math.ceil(Math.random()*255);
+        }
+
+     
+        
+            let x=document.getElementsByClassName("box");
+
+    //   let func=()=>{
+
+    //     for(let i=0;i<x.length;i++){
+          
+    //        x[i].style.background = "rgba(" + randomcolor() + "," + randomcolor() + "," + randomcolor() + ")";
+  
+    //     }
+
+    // }
+    // 
+    // window.addEventListener("load", func(), false);
+
+    
+
+    window.onload=()=>{
+
+for(let i=0;i<x.length;i++){
+  
+   x[i].style.background = 'rgba(' + randomcolor() + ',' + randomcolor() + ',' + randomcolor() + ')';
+
+
+}
+
+// x[0].style.background ="rgb(255,0,0)";
+
+    }
+ 
+    
+    console.log("rgba(" + randomcolor() + "," + randomcolor() + "," + randomcolor() + ")")
+
+      
+       
+
+
+
+        // "rgba('+randomcolor()+','+randomcolor()+','+randomcolor()+'\)"
+
+            
+
+    </script>
+    
+</body>
+</html>

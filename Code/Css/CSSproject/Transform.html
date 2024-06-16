@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            border: 2px solid black;
+            width: 100vw;
+            height: 80vh;
+
+        }
+
+        .box{
+            border: 2px solid red;
+            width: 50px;
+            height: 60px;
+            /* rotate: 45deg; */
+            /* 1 degree=360 deg turn */
+
+            /* transform: rotate(0.125turn); */
+           
+            /* transform: rotate(0.5turn); */
+            /* transform: rotateX(45deg);
+            transform: rotateY(45deg); */
+            /* transform: rotateZ(10deg); */
+
+            /* transform: scale(1.5); */
+            /* transform: skew(5deg); */
+            /* transform: skewY(40deg); */
+            /* Shift left to right 50 % of the width */
+            /* transform: translateX(50%);
+             /* Shift left to right if pixel value is positive otherwise */
+            /* transform: translateX(50px); */
+
+
+            /* shift top to bottom  if pixel value is postive*/
+            /* If pixel value is negative then  bottom to top */
+
+            /* transform: translateY(90px); */
+
+
+
+                
+            /* transform:rotate(45deg) translateX(50%) skewX(40deg) translateY(90px); */
+
+            
+            transform:rotate(45deg);
+            
+
+            transform-origin:0% 0% ;
+
+
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellow;
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+
+        <div class="box">box</div>
+    </div>
+    
+</body>
+</html>

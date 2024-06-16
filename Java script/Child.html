@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .child{
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+            margin: 6px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="child">Box1</div>
+        <div class="child">Box2</div>
+        <div class="child">Box3</div>
+        <div class="child">Box4</div>
+    </div>
+    <script src="child.js"></script>
+    
+    <!-- Hello
+document.body.childNodes[1].childNodes[0]
+#text
+document.body.childNodes[1].childNodes
+NodeList(9) [text, div.child, text, div.child, text, div.child, text, div.child, text]
+document.body.childNodes[1].childNodes[2]
+#text
+document.body.childNodes[1].childNodes[1]
+<div class=​"child">​Box1​</div>​
+x=document.body.childNodes[1]
+<div class=​"parent">​…​</div>​
+const x=document.body.childNodes[1]
+undefined
+x.childNodes[1]
+<div class=​"child">​Box1​</div>​
+x.f
+undefined
+x.fir
+undefined
+x.firstChild
+#text 
+
+Hello
+x.s
+VM606:1 Uncaught ReferenceError: x is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM606:1
+const x=document.body.childNodes[1]
+undefined
+x.firstElementChild.style.color="red";
+'red'
+document.bod
+undefined
+document.body.children
+HTMLCollection(2) [div.parent, script]
+document.body.children[0]
+<div class=​"parent">​…​</div>​-->
+</body>
+</html>
